@@ -4,7 +4,10 @@ import 'screens/sign_in_screen.dart';
 import 'screens/sign_up_screen.dart';
 import 'screens/forgot_password_screen.dart';
 import 'screens/verification_screen.dart';
-import 'screens/new_password_screen.dart'; // You'll need to create this
+import 'screens/new_password_screen.dart';
+import 'screens/profile_screen.dart';
+
+import 'screens/charik_match_detail_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +40,9 @@ class MyApp extends StatelessWidget {
         '/signup': (context) => const SignUpScreen(),
         '/forgot-password': (context) => const ForgotPasswordScreen(),
         '/verification': (context) => const VerificationScreen(),
-        '/new-password': (context) => const NewPasswordScreen(), // Add this route
+        '/new-password': (context) => const NewPasswordScreen(),
+        '/profile': (context) => const ProfileScreen(),
+        '/charik-match-detail': (context) => const CharikMatchDetailScreen(),
       },
     );
   }

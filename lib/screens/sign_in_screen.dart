@@ -75,7 +75,10 @@ class SignInScreen extends StatelessWidget {
               ),
               const SizedBox(height: 24),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  // After successful login, navigate to the Charik Match screen
+                  Navigator.pushNamed(context, '/charik-match-detail');
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
                   minimumSize: const Size(double.infinity, 50),
